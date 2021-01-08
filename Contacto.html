@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="estilos.css">
+
     <link rel="stylesheet" href="estiloss.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="correo.css">
-        <link rel="stylesheet" href="css/estilos.css">
+  
+
+        <link rel="stylesheet" href="ccss/estilos.css">
   
 
   <link rel="stylesheet" href="assets/css/main.css">
@@ -23,7 +24,7 @@
 
 <body>
     <div class="topnav" id="myTopnav">
-        <img src="img/logo_curvas_pradiot (2).png"width="200" height="60" >
+        <img src="img/logo-final-02.png"width="200" height="60" >
    
      <a href="Contacto.html" class="active">Contacto</a>
      <a href="Noticias.html">Productos</a>
@@ -75,60 +76,56 @@
      
         </head>
         <body>
-           
-                        <div class="card-body">
-                          <!-- Formulario -->
-                          <form id="form-mail" class="mt-3">
-                            <div class="form-group row">
-                              <label for="nombre" class="col-sm-4 col-form-label">Nombre</label>
-                              <div class="col-sm-8">
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre comleto" name="nombre">
-                              </div>
-                            </div>
-            
-                            <div class="form-group row">
-                              <label for="telefono" class="col-sm-4 col-form-label">Teléfono</label>
-                              <div class="col-sm-8">
-                                <input type="text" class="form-control" id="telefono" placeholder="Numero de telefono" name="telefono">
-                              </div>
-                            </div>
-            
-                            <div class="form-group row">
-                              <label for="mensaje" class="col-sm-4 col-form-label">Mensaje</label>
-                              <div class="col-sm-8">
-                                <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Escribe tu mensaje"></textarea>
-                              </div>
-                            </div>
-            
-                            <div class="form-group row">
-                              <label for="correo" class="col-sm-4 col-form-label">Correo</label>
-                              <div class="col-sm-8">
-                                <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo">
-                              </div>
-                            </div>
-                            
-                            <div class="form-group row">
-                              <div class="col-sm-6 offset-sm-3 mt-3">
-                                <button type="submit" class="btn btn-success btn-block">Enviar</button>
-                              </div>
-                            </div>
-                          </form>
-                          <!-- Formulario -->
-                        </div>
-                      </div>
-                      <!-- CARD -->
-                    </div>
+          <title>Formulario</title>
+        </head>
+        <body>
+          <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Formulario</h1>
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo">
+                  <div class="alert alert-warning alerta_correo" role="alert">
+                    Ingresa un correo válido
+                  </div>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <input type="tel" class="form-control" id="numero" placeholder="Ingresa tu numero de telefono">
+      
+                  </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="mensaje" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+                  <div class="alert alert-warning alerta_mensaje" role="alert">
+                    El mensaje muy corto
+                  </div>
+                  <div class="alert alert-success alerta_correcto" role="alert">
+                    El correo ha sido enviado
+                  </div>
+                  <div class="alert alert-danger alerta_incorrecto" role="alert">
+                    No se envió el correo, intenta más tarde
                   </div>
                 </div>
-              </section>
+                <div class="form-group">
+                  <a href="#" class="btn btn-info btn-lg" role="button" aria-pressed="true" onclick="enviarCorreo();">Enviar</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+          <script type="text/javascript" src="jsm/funciones.js"></script>
             
               <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
               <script src="Controller/mail.js"></script>
+              <br>
+              <br>
+              <br><br><br><br><br>
         <div class="footer">
             <div class="footer_menu">
                <div class="col_1">
                   <div class="title">
-                    <img src=img/logo_curvas_pradiot_amarillo.PNG width="200" height="50"/> 
+                    <img src="img/logo-final-02.png"width="200" height="60" > 
                   </div>  
                   <h6><p style="color:#ffdf00">Creamos nuestras soluciones </p>
                   <p style="color:#ffdf00">con prácticas líderes en el diseño de</p>
